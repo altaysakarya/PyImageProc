@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyimageproc.egg-info/PKG-INFO
+pyimageproc.egg-info/SOURCES.txt
+pyimageproc.egg-info/dependency_links.txt
+pyimageproc.egg-info/requires.txt
+pyimageproc.egg-info/top_level.txt
