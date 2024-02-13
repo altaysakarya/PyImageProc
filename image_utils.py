@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
 
 
-def resize_image(image_path, new_width, new_height, file_name="resized_image", save_path=""):
+def resize_image(image_path, new_width, new_height, file_name=None, save_path=None):
     """
     Resizes an image to the specified width and height.
 
@@ -14,11 +14,14 @@ def resize_image(image_path, new_width, new_height, file_name="resized_image", s
     """
     image = Image.open(image_path)
     resized_image = image.resize((new_width, new_height))
-    ext = image_path.split(".")[-1]
-    resized_image.save(save_path + f"{file_name}.{ext}")
+    if file_name is not None and save_path is not None:
+        ext = image_path.split(".")[-1]
+        resized_image.save(save_path + f"{file_name}.{ext}")
+    else:
+        return resized_image
 
 
-def rotate_image(image_path, angle, file_name="rotated_image", save_path=""):
+def rotate_image(image_path, angle, file_name=None, save_path=None):
     """
     Rotates an image by the specified angle.
 
@@ -30,8 +33,11 @@ def rotate_image(image_path, angle, file_name="rotated_image", save_path=""):
     """
     image = Image.open(image_path)
     rotated_image = image.rotate(angle)
-    ext = image_path.split(".")[-1]
-    rotated_image.save(save_path + f"{file_name}.{ext}")
+    if file_name is not None and save_path is not None:
+        ext = image_path.split(".")[-1]
+        rotated_image.save(save_path + f"{file_name}.{ext}")
+    else:
+        return rotated_image
 
 
 def apply_grayscale(image_path, file_name="grayscale_image", save_path=""):

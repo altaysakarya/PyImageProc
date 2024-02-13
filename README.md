@@ -10,12 +10,6 @@ The functions provided in this package allow you to easily resize images, rotate
 
 By abstracting away the complexities of the Pillow library, this package aims to make PyImageProc tasks more accessible and user-friendly for developers who need to perform such operations on images.
 
-
-## Buy Me A Coffee ☕️
-
-<a href="https://www.buymeacoffee.com/altaysakarya" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-
 ## Functions
 
 - `resize_image(image_path, new_width, new_height, file_name="resized_image", save_path="")`: Resizes an image to the specified width and height.
@@ -54,3 +48,6 @@ apply_mosaic("input_image.jpg", 10, save_path="output/")
 
 4. Replace `"input_image.jpg"` with the path to your actual image file. Adjust the function arguments according to your requirements. The manipulated images will be saved in the specified save_path directory.
 
+## Buy Me A Coffee ☕️
+
+<a href="https://www.buymeacoffee.com/altaysakarya" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
